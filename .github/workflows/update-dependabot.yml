@@ -31,6 +31,6 @@ jobs:
           gradle-branches: ${{ needs.get-supported-branches.outputs.supported_versions }},main
           github-actions-branches: ${{ needs.get-supported-branches.outputs.supported_versions }},main,docs-build
           gh-token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stefanzweifel/git-auto-commit-action@v6
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Update dependabot.yml
