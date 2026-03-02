@@ -37,7 +37,7 @@ jobs:
         run: ./gradlew -PbuildSrc.skipTests=true :spring-security-docs:antora
       - name: Upload Docs
         id: upload
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: docs
           path: docs/build/site
